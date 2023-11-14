@@ -18,9 +18,7 @@ mongoose
 })
 
 // connecting the front end to backend
-app.use(cors({
-    origin: 'https://the-world-de-espanol.onrender.com',
-}))
+app.use(cors())
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
