@@ -19,7 +19,7 @@ mongoose
 
 // connecting the front end to backend
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://the-world-de-espanol.onrender.com',
 }))
 
 app.use(bodyParser.urlencoded({ extended: false }))
