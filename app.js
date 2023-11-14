@@ -17,6 +17,13 @@ mongoose
     console.error('Error connecting', err.reason)
 })
 
+let corsOptions = {
+    origin: "https://cool-puffpuff-3b6cca.netlify.app",
+    allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
+    credentials: "true",
+    methods: ["GET", "POST"]
+}
+
 // connecting the front end to backend
 app.use(cors())
 
