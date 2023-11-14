@@ -19,7 +19,7 @@ mongoose
 
 let corsOptions = {
     origin: "https://cool-puffpuff-3b6cca.netlify.app",
-    allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
+    allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "Access-Control-Allow-Origin"],
     credentials: "true",
     methods: ["GET", "POST"]
 }
