@@ -18,7 +18,7 @@ mongoose
 })
 
 let corsOptions = {
-    origin: "https://cool-puffpuff-3b6cca.netlify.app",
+    origin: "https://the-world-de-espanol.onrender.com",
     allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "Access-Control-Allow-Origin"],
     credentials: "true",
     methods: ["GET", "POST"]
