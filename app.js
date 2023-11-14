@@ -5,7 +5,9 @@ const cors = require('cors');
 const bodyParser = require("body-parser")
 
 const userRoute = require("./routes/user.routes");
-const blogRoute = require("./routes/blog.route")
+const blogRoute = require("./routes/blog.route");
+
+const PORT = process.env.PORT || 3000;
 
 //MongoDB Connection
 mongoose
@@ -39,4 +41,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(3000);
+app.listen(PORT, () => {
+    console.log(`Listening at ${PORT}`);
+});
